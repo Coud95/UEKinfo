@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
-    DrawerLayout drawerLayour;
+    DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     FragmentTransaction fragmentTransaction;
     NavigationView navigationView;
@@ -24,26 +24,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        drawerLayour = (DrawerLayout) findViewById(R.id.drawer_layout);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayour, toolbar, R.string.drawer_open, R.string.drawer_close);
-        drawerLayour.addDrawerListener(actionBarDrawerToggle);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
 
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(R.id.main_container, new HomeFragment());
         fragmentTransaction.commit();
         getSupportActionBar().setTitle("Home Fragment");
-        navigationView = (NavigationView)findViewById(R.id.navigation_view);
+        navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch(item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.home_id:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.main_container, new HomeFragment());
                         fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("Home Fragment");
+                        getSupportActionBar().setTitle("Home");
                         item.setChecked(true);
-                        drawerLayour.closeDrawers();
+                        drawerLayout.closeDrawers();
                         break;
 
                     case R.id.settings_id:
@@ -52,16 +52,16 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Settings Fragment");
                         item.setChecked(true);
-                        drawerLayour.closeDrawers();
+                        drawerLayout.closeDrawers();
                         break;
 
                     case R.id.map_id:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.main_container, new MapFragment());
                         fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("Map Fragment");
+                        getSupportActionBar().setTitle("Plan Kampusu");
                         item.setChecked(true);
-                        drawerLayour.closeDrawers();
+                        drawerLayout.closeDrawers();
                         break;
                 }
                 return true;
