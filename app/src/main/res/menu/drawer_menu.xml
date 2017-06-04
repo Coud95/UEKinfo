@@ -15,4 +15,12 @@
             android:title="Settings"
             ></item>
     </group>
+    <item android:title="test">
+        <menu>
+            <item
+                android:id="@+id/year_id"
+                android:title="Year"
+                ></item>
+        </menu>
+    </item>
 </menu>
