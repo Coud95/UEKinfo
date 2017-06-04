@@ -25,7 +25,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/settings_container"
+            android:id="@+id/deanery_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

@@ -4,23 +4,22 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home_id"
-            android:title="Home"
-            ></item>
+            android:title="UEK"></item>
         <item
             android:id="@+id/map_id"
-            android:title="Map"
-            ></item>
+            android:title="Plan Kampusu"></item>
         <item
-            android:id="@+id/settings_id"
-            android:title="Settings"
-            ></item>
+            android:id="@+id/deanery_id"
+            android:title="Dziekanaty"></item>
     </group>
-    <item android:title="test">
+    <item android:title="Przydatne linki">
         <menu>
             <item
-                android:id="@+id/year_id"
-                android:title="Year"
-                ></item>
+                android:id="@+id/deanery_site_id"
+                android:title="Wirtualny dziekanat"></item>
+            <item
+                android:id="@+id/moodle_id"
+                android:title="Moodle"></item>
         </menu>
     </item>
 </menu>

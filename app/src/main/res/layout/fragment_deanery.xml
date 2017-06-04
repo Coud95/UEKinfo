@@ -2,13 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pl.coud.uekinfo.SettingsFragment">
+    tools:context="pl.coud.uekinfo.DeaneryFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Settings"
+        android:text="Dziekanaty"
         android:gravity="center"
         android:textSize="35dp"
         android:textStyle="bold"

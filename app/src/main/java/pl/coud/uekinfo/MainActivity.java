@@ -1,5 +1,7 @@
 package pl.coud.uekinfo;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(R.id.main_container, new HomeFragment());
         fragmentTransaction.commit();
-        getSupportActionBar().setTitle("Home Fragment");
+        getSupportActionBar().setTitle("UEKinfo");
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -41,16 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.main_container, new HomeFragment());
                         fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("Home");
-                        item.setChecked(true);
-                        drawerLayout.closeDrawers();
-                        break;
-
-                    case R.id.settings_id:
-                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.main_container, new SettingsFragment());
-                        fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("Settings Fragment");
+                        getSupportActionBar().setTitle("UEK");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -62,6 +55,29 @@ public class MainActivity extends AppCompatActivity {
                         getSupportActionBar().setTitle("Plan Kampusu");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.deanery_id:
+                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container, new DeaneryFragment());
+                        fragmentTransaction.commit();
+                        getSupportActionBar().setTitle("Dziekanaty");
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.deanery_site_id:
+                        Uri wd_url = Uri.parse("https://wd.uek.krakow.pl");
+                        Intent intent1 = new Intent(Intent.ACTION_VIEW, wd_url);
+                        startActivity(intent1);
+                        getSupportActionBar().setTitle("Wirtualna Uczelnia UEK");
+                        break;
+
+                    case R.id.moodle_id:
+                        Uri moodle_url = Uri.parse("https://e-uczelnia.uek.krakow.pl");
+                        Intent intent2 = new Intent(Intent.ACTION_VIEW, moodle_url);
+                        startActivity(intent2);
+                        getSupportActionBar().setTitle("e-Uczelnia UEK");
                         break;
                 }
                 return true;
