@@ -45,10 +45,11 @@ public class HomeFragment extends Fragment {
 
                 try {
                     Document doc = Jsoup.connect("http://uek.krakow.pl/pl/aktualnosci.html").get();
-                    Elements tytuly = doc.select("div[class=tytul]");
+                    Elements wiadomosci = doc.select("div[class=wiadomosc]");
                     int numer = 1;
-                    for(Element tytul : tytuly) {
-                        builder.append("\n" + numer + ". ").append(tytul.text()).append("\n");
+                    for(Element wiadomosc : wiadomosci) {
+                        builder.append("\n" + numer + ". ").append(wiadomosc.select("div[class=data").text())
+                                .append("\n" + wiadomosc.select("div[class=tytul").text()).append("\n");
                         numer++;
                     }
 
