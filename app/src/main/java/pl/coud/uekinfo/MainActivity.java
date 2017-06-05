@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (!isNetworkAvailable()) {
-            Toast.makeText(this, "Brak połączenia z Internetem",
+            Toast.makeText(this, "Brak połączenia z Internetem.\nPewne funkcjonalności nie będą działać.",
                     Toast.LENGTH_LONG).show();
         }
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.main_container, new HomeFragment());
                         fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("UEK");
+                        getSupportActionBar().setTitle("Aktualności");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction.replace(R.id.main_container, new MapFragment());
                         fragmentTransaction.commit();
-                        getSupportActionBar().setTitle("Plan Kampusu");
+                        getSupportActionBar().setTitle("Plan kampusu");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -69,6 +69,15 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container, new DeaneryFragment());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Dziekanaty");
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.year_id:
+                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container, new YearFragment());
+                        fragmentTransaction.commit();
+                        getSupportActionBar().setTitle("Organizacja roku");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
@@ -85,6 +94,13 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent2 = new Intent(Intent.ACTION_VIEW, moodle_url);
                         startActivity(intent2);
                         getSupportActionBar().setTitle("e-Uczelnia UEK");
+                        break;
+
+                    case R.id.language_id:
+                        Uri cj_url = Uri.parse("https://cj.uek.krakow.pl");
+                        Intent intent3 = new Intent(Intent.ACTION_VIEW, cj_url);
+                        startActivity(intent3);
+                        getSupportActionBar().setTitle("Centrum Językowe UEK");
                         break;
                 }
                 return true;

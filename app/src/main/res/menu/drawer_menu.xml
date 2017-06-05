@@ -4,13 +4,22 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home_id"
-            android:title="UEK"></item>
+            android:title="Aktualności"></item>
         <item
             android:id="@+id/map_id"
-            android:title="Plan Kampusu"></item>
+            android:title="Plan kampusu"></item>
+        <item
+            android:id="@+id/year_id"
+            android:title="Organizacja roku"></item>
         <item
             android:id="@+id/deanery_id"
             android:title="Dziekanaty"></item>
+        <item
+            android:id="@+id/schedule_id"
+            android:title="Plan zajęć"></item>
+        <item
+            android:id="@+id/wifi_id"
+            android:title="Wi-Fi dla studentów"></item>
     </group>
     <item android:title="Przydatne linki">
         <menu>
@@ -20,6 +29,9 @@
             <item
                 android:id="@+id/moodle_id"
                 android:title="Moodle"></item>
+            <item
+                android:id="@+id/language_id"
+                android:title="Centrum Językowe UEK"></item>
         </menu>
     </item>
 </menu>
