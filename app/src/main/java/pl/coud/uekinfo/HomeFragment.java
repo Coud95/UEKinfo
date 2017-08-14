@@ -1,8 +1,11 @@
 package pl.coud.uekinfo;
 
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +39,14 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+    @SuppressWarnings("deprecation")
+    public static Spanned fromHtml(String source) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            return Html.fromHtml(source, Html.FROM_HTML_MODE_LEGACY);
+        } else {
+            return Html.fromHtml(source);
+        }
+    }
     private void getWebsite() {
         new Thread(new Runnable() {
 
@@ -48,8 +59,8 @@ public class HomeFragment extends Fragment {
                     Elements wiadomosci = doc.select("div[class=wiadomosc]");
                     int numer = 1;
                     for(Element wiadomosc : wiadomosci) {
-                        builder.append("\n" + numer + ". ").append(wiadomosc.select("div[class=data").text())
-                                .append("\n" + wiadomosc.select("div[class=tytul").text()).append("\n");
+                        builder.append("<br><h3>" + numer + ". ").append(wiadomosc.select("div[class=data").text())
+                                .append("</h3>" + wiadomosc.select("div[class=tytul").text()).append("<br>");
                         numer++;
                     }
 
@@ -60,7 +71,8 @@ public class HomeFragment extends Fragment {
 
                     @Override
                     public void run() {
-                        news.setText(builder.toString());
+                        String newsText = builder.toString();
+                        news.setText(fromHtml(newsText));
                     }
                 });
             }

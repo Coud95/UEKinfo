@@ -28,11 +28,10 @@
             android:id="@+id/news"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:layout_margin="10dp"
-            android:textStyle="italic"
-            android:textSize="15sp"
-            android:text="" />
+            android:gravity="start"
+            android:text=""
+            android:textSize="15sp" />
     </ScrollView>
 
 </RelativeLayout>
