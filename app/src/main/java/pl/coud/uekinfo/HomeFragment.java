@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +61,8 @@ public class HomeFragment extends Fragment {
                     int numer = 1;
                     for(Element wiadomosc : wiadomosci) {
                         builder.append("<br><h3>" + numer + ". ").append(wiadomosc.select("div[class=data").text())
-                                .append("</h3>" + wiadomosc.select("div[class=tytul").text()).append("<br>");
+                                .append("</h3>" + wiadomosc.select("div[class=tytul").text())
+                                .append("<br> <a href=\"http://uek.krakow.pl" + wiadomosc.select("a").attr("href") + "\"> więcej...</a>");
                         numer++;
                     }
 
@@ -72,6 +74,7 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void run() {
                         String newsText = builder.toString();
+                        news.setMovementMethod(LinkMovementMethod.getInstance());
                         news.setText(fromHtml(newsText));
                     }
                 });
