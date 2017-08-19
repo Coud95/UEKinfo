@@ -4,22 +4,28 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home_id"
-            android:title="Aktualności"></item>
+            android:title="Aktualności"
+            android:icon="@drawable/news"></item>
         <item
             android:id="@+id/map_id"
-            android:title="Plan kampusu"></item>
+            android:title="Plan kampusu"
+            android:icon="@drawable/university_plan"></item>
         <item
             android:id="@+id/year_id"
-            android:title="Organizacja roku"></item>
+            android:title="Organizacja roku"
+            android:icon="@drawable/year"></item>
         <item
             android:id="@+id/deanery_id"
-            android:title="Dziekanaty"></item>
+            android:title="Dziekanaty"
+            android:icon="@drawable/university"></item>
         <item
             android:id="@+id/schedule_id"
-            android:title="Plan zajęć"></item>
+            android:title="Plan zajęć"
+            android:icon="@drawable/schedule"></item>
         <item
             android:id="@+id/wifi_id"
-            android:title="Wi-Fi dla studentów"></item>
+            android:title="Wi-Fi dla studentów"
+            android:icon="@drawable/internet"></item>
     </group>
     <item android:title="Przydatne linki">
         <menu>

@@ -48,6 +48,7 @@ public class HomeFragment extends Fragment {
             return Html.fromHtml(source);
         }
     }
+
     private void getWebsite() {
         new Thread(new Runnable() {
 
@@ -58,16 +59,13 @@ public class HomeFragment extends Fragment {
                 try {
                     Document doc = Jsoup.connect("http://uek.krakow.pl/pl/aktualnosci.html").get();
                     Elements wiadomosci = doc.select("div[class=wiadomosc]");
-                    for(Element wiadomosc : wiadomosci) {
-                        builder.append("<br><h4>").append(wiadomosc.select("div[class=data").text())
-                                .append("</h4>" + wiadomosc.select("div[class=tytul").text())
-                                .append("<br><a href=\"http://uek.krakow.pl" + wiadomosc.select("a").attr("href") + "\">Czytaj więcej...</a>");
+                    for (Element wiadomosc : wiadomosci) {
+                        builder.append("<h4>").append(wiadomosc.select("div[class=data").text()).append("</h4>").append(wiadomosc.select("div[class=tytul").text()).append("<br><a href=\"http://uek.krakow.pl").append(wiadomosc.select("a").attr("href")).append("\"><small>Czytaj więcej --></small></a><br>");
                     }
-
                 } catch (IOException e) {
                     builder.append("Problem z połączeniem");
                 }
-                getActivity().runOnUiThread(new Runnable(){
+                getActivity().runOnUiThread(new Runnable() {
 
                     @Override
                     public void run() {
