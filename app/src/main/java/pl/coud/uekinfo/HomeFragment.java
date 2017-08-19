@@ -58,12 +58,10 @@ public class HomeFragment extends Fragment {
                 try {
                     Document doc = Jsoup.connect("http://uek.krakow.pl/pl/aktualnosci.html").get();
                     Elements wiadomosci = doc.select("div[class=wiadomosc]");
-                    int numer = 1;
                     for(Element wiadomosc : wiadomosci) {
-                        builder.append("<br><h3>" + numer + ". ").append(wiadomosc.select("div[class=data").text())
-                                .append("</h3>" + wiadomosc.select("div[class=tytul").text())
-                                .append("<br> <a href=\"http://uek.krakow.pl" + wiadomosc.select("a").attr("href") + "\"> więcej...</a>");
-                        numer++;
+                        builder.append("<br><h4>").append(wiadomosc.select("div[class=data").text())
+                                .append("</h4>" + wiadomosc.select("div[class=tytul").text())
+                                .append("<br><a href=\"http://uek.krakow.pl" + wiadomosc.select("a").attr("href") + "\">Czytaj więcej...</a>");
                     }
 
                 } catch (IOException e) {

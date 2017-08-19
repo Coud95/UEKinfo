@@ -82,6 +82,21 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawers();
                         break;
 
+                    case R.id.schedule_id:
+                        Intent intent = getPackageManager().getLaunchIntentForPackage("pl.konradwaniolka.uekplan");
+                        if (intent != null) {
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                        } else {
+                            intent = new Intent(Intent.ACTION_VIEW);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent.setData(Uri.parse("market://details?id=" + "pl.konradwaniolka.uekplan"));
+                            startActivity(intent);
+                        }
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
                     case R.id.deanery_site_id:
                         Uri wd_url = Uri.parse("https://wd.uek.krakow.pl");
                         Intent intent1 = new Intent(Intent.ACTION_VIEW, wd_url);
