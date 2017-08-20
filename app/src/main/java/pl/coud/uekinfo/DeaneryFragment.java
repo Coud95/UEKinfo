@@ -18,6 +18,7 @@ import android.widget.Spinner;
 public class DeaneryFragment extends Fragment {
     Spinner spinner;
     WebView webView;
+
     public DeaneryFragment() {
         // Required empty public constructor
     }
@@ -41,7 +42,7 @@ public class DeaneryFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String selected = parentView.getItemAtPosition(position).toString();
-                switch(selected) {
+                switch (selected) {
                     case "Wydział Ekonomii i Stosunków Międzynarodowych":
                         webView.loadUrl("http://uek.krakow.pl/pl/uczelnia/wydzialy/wydzial-ekonomii-i-stosunkow-miedzynarodowych/wydzial/dziekanat.html");
                         break;
@@ -57,7 +58,7 @@ public class DeaneryFragment extends Fragment {
                     case "Wydział Zarządzania":
                         webView.loadUrl("http://uek.krakow.pl/pl/uczelnia/wydzialy/wydzial-zarzadzania/wydzial/dziekanat.html");
                         break;
-               }
+                }
             }
 
             @Override

@@ -7,8 +7,35 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="7e0618a9fb36dd5f3114085dcb6d2771b1477478">
+        sha1="cef9f99d301c5ee2cdd9abf0b273efe148c29de3">
         <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_51423a3c6cc86d077aa06ba9fc37bc8c42a3470a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/383139bd5b41316c3c1cf462e20458d01f978506/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c3e81d3eb86b86d194b5cdb6a4de78203f6f7fd">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9a0e541a0f3b96dc96988b42d47a8beb64b37bee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/434b3a7eee1845bd9f0ed4fe0aa5c768d56c76c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cb4af597d079ffdc0984a3ec2c03cbf6a1b9f869">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_66bb71407994cde5a6245e9e13f24744ab0a78be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/fde7029fe0724bdae9397bcf4ec0037565c33678/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="71eda10e33212e44245524b5087366ff8d805825">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e24017eda6dca9a049d4d012c3f7b60e15fb3393/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +45,204 @@
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cc52924b234a9ba7cc4e29fcf69bf4d6a5506350/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/563cb30084aa35355dcea570f97378bd9b8ba727/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="697679619b00837e3d09e9988a2e1e2a9009d502">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a3cb86c55d947e1358dc9e746a7e897595abb0e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/ebf33c4577bce63f5cbf71852eec6a82de5b0709/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0a1897426566e408a5c20a3d931f77d89771d07f">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_957206eca57ad98e1a109ebbf782401330b960d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/53aac15d22db2a3e6757b7588a2c07845fd25f75/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b000ecceb9877fefcdc7ab1959ff03df91551656">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_02523616292df90276194671254fe65006082f9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/4d3dae2f9f13ec69cfafd5d15e86dcd19f968898/output/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.0_e02584400ca2ff16c61cdb2bad4663583491e98a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/5653b9167ec71ea472a423a41aa28dbac49a45fb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="af6ee25641df3142059c0828517aa7ee6eba08d6">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6ddc25fd614455da2a53a4c94b7d69c73fcd0d35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/1b80c80c15839cb22825e55c2c6ce64d510ca046/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0af4f577b4a21eb9be2a7f52e33b077b67e6d9f8">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9885bf56bf2850f6b9a242d0555233cda67435ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/f1a32bb498eda0acb56b8503bedd89bae0f4addf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="27775d59b16610ac76f1b83693fedd9520396332">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0aa7f88dd36da9c53a8502dc3bf305989b2f814d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/d37b86af820a7cf78e44ecdc801767d65a437169/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="77f9593d979f4347344be233bd0d888315f79517">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bdde912e8ca140bfc2e7ec99669a3f3df031acdb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/e097ba41b72c2c62e1a01cc519ade819ca3d6cb2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="01a90bbb9495a8bbf6f3cfdf12f1b35caaa9524b">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2eb282660004d12fb2dd71e760113432d4304a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/43f92b02a58474483307a76cd334cf37b8a0a6e8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ea34579b1be157cd792376362157e9c54ebb4cd7">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1985771fb85a2b9b30c689568d8599040ae49ee8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/4d3dae2f9f13ec69cfafd5d15e86dcd19f968898/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee6e6b43bc4cc5aca7d682e831a35632a9eac0d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/224eb0f0dc678f325e45804015833ebf7cdc66f1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9aedc597d74c6d77258ce5236e9abff0c3cc65e3">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d4b27d60b53dde89ffabd401b47aa18076989619/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/41ed4f9b76fd3e831890e8ba157382196d6d3c87/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f44778b720307da96f492cd562cc9bc214797f94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/2b8ebfe26c07611276c79667fcc21b875d705ae4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="724ce977487ab3a215d4d2eb47d8dccd9f30013f">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42dfe2696daa97259c4314470519951a8d6edd06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/05a945bdbcadf536c5d252128acdefe0bf03e78a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="58adcfbe2c8393765e84c5489d01bba6a5159eb2">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c4180b2e2a0916e407566839e59518aba4ffad2a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/218f6ff6893feb84f4c990be9230fad2ee766c91/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c6fcd6267cbac6509a2e72a61127534a1d616cf">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c16839664e2894fafe111b8abd1b156036a9bbf4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/be6e61663bcfef2bf1e1bb6886c5355b8a9bfcd3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4b8df1b1e51fe14b0e89b3845dc2e215a024a09f">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_13ae5e8bb6884243dd84cc8884e1a765a4ce0cc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/c8d270c348cfdd3db73b191bda22e47f333fc8ee/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="744c49c02a27569cc4cc049685d3649e4ef439f2">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d84368ae30c9d1084421f887fb43731853fa29a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/44f05edbeda24232c2e58d318dfe1b994af45968/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="eb576427887e497cd958a475475f9206e38dc314">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9aa9c69b6a886493956c8aab76f1118617cab8d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/5731dd84594552d997b041867978ee4c7ee22086/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9c9bdb4b2497465a6cf7d5e8f57c5298f828a380">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aa198c24c19c0df21f5d6c4c000ba03a1bdad5e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/a01926d4b0d32903d807ffcdf7abef9485331d62/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fd76d95678a6b2b8a49bb8a9fb5bcef7aedb70e7">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_15441ae6cd7b8ba6507abc9aef277a315de11c24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/coud/.android/build-cache/b12ccb052ee428d6a0a588d2b8ee689de70f08fb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
+        <dex dex="/home/coud/AndroidStudioProjects/UEKinfo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6c01bb739d5fb4b25fccfa66cc799e4e7d92972f/classes.dex" />
     </item>
 
 </items>
