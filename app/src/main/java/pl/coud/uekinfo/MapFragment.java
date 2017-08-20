@@ -25,6 +25,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     GoogleMap googleMap;
     MapView mapView;
     View view;
+
     public MapFragment() {
         // Required empty public constructor
     }
@@ -38,10 +39,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     }
 
     @Override
-    public void onViewCreated(View view,  Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mapView = (MapView) view.findViewById(R.id.mapView);
-        if(mapView != null){
+        if (mapView != null) {
             mapView.onCreate(null);
             mapView.onResume();
             mapView.getMapAsync(this);
