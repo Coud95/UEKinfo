@@ -82,6 +82,15 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawers();
                         break;
 
+                    case R.id.wifi_id:
+                        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container, new WiFiFragment());
+                        fragmentTransaction.commit();
+                        getSupportActionBar().setTitle("Wi-Fi dla studentów");
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
                     case R.id.schedule_id:
                         Intent intent = getPackageManager().getLaunchIntentForPackage("pl.konradwaniolka.uekplan");
                         if (intent != null) {
